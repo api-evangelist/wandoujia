@@ -1,8 +1,25 @@
 aid: wandoujia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wandoujia.png
 name: Wandoujia
-description: 'Wandoujia is a company surfaced as a portfolio company of dcm-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Wandoujia (豌豆荚, "pea pod") is a Chinese Android app distribution platform and mobile
+  assistant launched in 2009 by Beijing-based Wandoulabs (Zhuoyi Xunchang Technology). It was known
+  for its PC-based Android management client and its in-app content search that indexed apps, games,
+  video, and other content across the Chinese Android ecosystem. Wandoujia was acquired by Alibaba/UCWeb
+  in 2016 and folded into Alibaba''s app-distribution business. Its consumer and developer web
+  properties (www., open., and developer.wandoujia.com) no longer resolve; only residual
+  Alibaba-hosted infrastructure (api. and account.wandoujia.com) remains, and there is no documented
+  public API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/wandoujia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Android
+- App Store
+- Mobile
+- App Distribution
+- China
+- Alibaba
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +48,13 @@ maintainers:
 common:
 - type: Website
   url: http://www.wandoujia.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
+  note: 'Defunct provider. Consumer/developer hosts (www./open./developer.wandoujia.com) no longer
+    resolve; api./account.wandoujia.com sit on Alibaba infrastructure with all /.well-known/* and
+    /llms.txt returning 404. No OpenAPI, docs, SDKs, well-known, llms.txt, or security surface found.
+    Domain-security probe: unreachable; wandoujia.com has no SPF/DMARC/CAA/DNSSEC. Identity fields
+    (description, tags) upgraded from real facts.'
